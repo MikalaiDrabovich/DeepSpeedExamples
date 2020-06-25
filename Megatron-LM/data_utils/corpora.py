@@ -22,7 +22,7 @@ class wikipedia(json_dataset):
 
 	command line usage: `--train-data wikipedia`
 	"""
-	PATH = 'data/wikipedia/wikidump_lines.json'
+	PATH = '/data/wikipedia/for_deepspeed/deepspeed_wiki_text_json_merged_full.json'
 	assert_str = "make sure to set PATH for wikipedia data_utils/corpora.py"
 	def __init__(self, **kwargs):
 		assert os.path.exists(wikipedia.PATH), \
